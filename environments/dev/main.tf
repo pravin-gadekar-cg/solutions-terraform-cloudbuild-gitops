@@ -17,7 +17,7 @@ locals {
   "env" = "dev"
 }
 
-provider "google" {
+provider "google-beta" {
   project = "${var.project}"
 }
 
