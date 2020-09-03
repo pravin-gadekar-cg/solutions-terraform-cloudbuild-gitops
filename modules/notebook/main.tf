@@ -14,7 +14,7 @@ resource "google_notebooks_instance" "instance" {
   core_count = 1
   }
   vm_image {
-  project = var.project
+  project      = "deeplearning-platform-release"
   image_family = "tf-latest-gpu"
   }
 }
