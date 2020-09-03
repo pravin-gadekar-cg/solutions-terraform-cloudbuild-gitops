@@ -1,10 +1,8 @@
 
-resource “random_id” “instance_id” {
-  byte_length = 8
-}
+
 resource “google_notebooks_instance” “instance” {
   provider = google-beta
-  name = “nb-${random_id.instance_id.hex}”
+  name = “notebook-terraform-1”
   location = "us-west1-a"
   machine_type = “n1-standard-1”
   install_gpu_driver = true
