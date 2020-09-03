@@ -39,11 +39,6 @@ module "firewall" {
   subnet  = "${module.vpc.subnet}"
 }
 
-module "notebook" {
-  source  = "../../modules/notebook"
-  project = "${var.project}"
-}
-
 resource "google_notebooks_instance" "instance" {
   provider = google-beta
   name = "kfp-notebooks-instance-terraform"
