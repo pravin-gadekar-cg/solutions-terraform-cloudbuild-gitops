@@ -39,7 +39,3 @@ module "firewall" {
   subnet  = "${module.vpc.subnet}"
 }
 
-module "notebook" {
-  source  = "../../modules/notebook"
-  project = "${var.project}"
-}
