@@ -42,4 +42,5 @@ module "firewall" {
 module "notebook" {
   source  = "../../modules/notebook"
   project = "${var.project}"
+  env     = "${local.env}"
 }
