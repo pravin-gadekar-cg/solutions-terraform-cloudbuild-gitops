@@ -12,7 +12,7 @@ resource "google_notebooks_instance" "instance" {
   accelerator_config {
   type = "NVIDIA_TESLA_T4"
   core_count = 1
-  } 
+  }
   vm_image {
   project      = "deeplearning-platform-release"
   image_family = "tf-latest-gpu"
