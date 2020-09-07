@@ -5,7 +5,7 @@ resource "random_id" "instance_id" {
 
 resource "google_notebooks_instance" "instance" {
   provider = google-beta
-  name = "abc-${random_id.instance_id.hex}"
+  name = "cg-${random_id.instance_id.hex}"
   location = "us-west1-a"
   machine_type = "n1-standard-4"
   install_gpu_driver = true
