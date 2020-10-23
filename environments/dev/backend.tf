@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "ind-coe-tfstate"
+    bucket = "cgmlops-demo"
     prefix = "env/dev"
   }
 }
